@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #F4A300; /* Example color from the logo */
+    --secondary-color: #4A3C31; /* Example color from the logo */
+    --background-color: #F3F3E3; /* Example color from the logo */
+    --text-color: #333;
+***REMOVED***
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+***REMOVED***
+
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+***REMOVED***
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+***REMOVED***
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+***REMOVED***
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+***REMOVED***
+
+main {
+    padding: 20px;
+***REMOVED***
+
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+***REMOVED***
+
+.mt-5 {
+    margin-top: 3rem;
+***REMOVED***
+
+form {
+    display: flex;
+    flex-direction: column;
+***REMOVED***
+
+form label {
+    margin-top: 10px;
+***REMOVED***
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+***REMOVED***
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+***REMOVED***
+
+form button:hover {
+    background-color: var(--primary-color);
+***REMOVED***

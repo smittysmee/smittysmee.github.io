@@ -1,1 +1,1 @@
-# smittysmee.github.io
+brew install libpng
