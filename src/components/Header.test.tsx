@@ -1,5 +1,6 @@
 import React from 'react';
 import { render ***REMOVED*** from '@testing-library/react';
+import '@testing-library/jest-dom';
 import { BrowserRouter as Router ***REMOVED*** from 'react-router-dom';
 import Header from './Header';
 

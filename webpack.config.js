@@ -11,10 +11,11 @@ module.exports = {
         publicPath: '/public/',
 ***REMOVED***,
     devServer: {
-        contentBase: './dist',
-        historyApiFallback: true,
-        hot: true,
-***REMOVED***,
+***REMOVED***
+***REMOVED***
+***REMOVED***
+    ***REMOVED***,
+    devtool: "source-map",  // Critical for debugging!
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
 ***REMOVED***,

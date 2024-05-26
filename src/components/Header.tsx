@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav ***REMOVED*** from 'react-bootstrap';
 import { LinkContainer ***REMOVED*** from 'react-router-bootstrap';
-import logo from '../logo.png';
+import logo from '../assets/images/logo.png';
 
 const Header: React.FC = () => {
   return (
