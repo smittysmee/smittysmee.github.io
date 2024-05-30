@@ -22,7 +22,7 @@
       "src/types"
     ],
     "sourceMap": true
-  ***REMOVED***,
+  },
   "include": ["src"],
   "exclude": ["node_modules"]
-***REMOVED***
+}

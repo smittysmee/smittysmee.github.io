@@ -9,11 +9,11 @@ on:
 jobs:
   setup:
     # ignore all-contributors PRs
-    if: ${{ !contains(github.head_ref, 'all-contributors') ***REMOVED******REMOVED***
+    if: ${{ !contains(github.head_ref, 'all-contributors') }}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.os ***REMOVED******REMOVED***
+    runs-on: ${{ matrix.os }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3

@@ -1,11 +1,11 @@
 import React from 'react';
-import { render ***REMOVED*** from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { BrowserRouter as Router ***REMOVED*** from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 
 test('renders the Header component', () => {
-  const { getByAltText, getByText ***REMOVED*** = render(
+  const { getByAltText, getByText } = render(
     <Router>
       <Header />
     </Router>
@@ -14,4 +14,4 @@ test('renders the Header component', () => {
   expect(getByText(/Home/i)).toBeInTheDocument();
   expect(getByText(/About/i)).toBeInTheDocument();
   expect(getByText(/Contact/i)).toBeInTheDocument();
-***REMOVED***);
+});

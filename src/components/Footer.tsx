@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container ***REMOVED*** from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 const Footer: React.FC = () => {
   return (
@@ -9,6 +9,6 @@ const Footer: React.FC = () => {
       </Container>
     </footer>
   );
-***REMOVED***
+}
 
 export default Footer;

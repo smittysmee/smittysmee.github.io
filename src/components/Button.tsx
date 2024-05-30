@@ -1,17 +1,17 @@
 import React from 'react';
-import { Button as BootstrapButton ***REMOVED*** from 'react-bootstrap';
+import { Button as BootstrapButton } from 'react-bootstrap';
 
 interface ButtonProps {
   variant: string;
   onClick: () => void;
-***REMOVED***
+}
 
-const Button: React.FC<ButtonProps> = ({ variant, onClick, children ***REMOVED***) => {
+const Button: React.FC<ButtonProps> = ({ variant, onClick, children }) => {
   return (
-    <BootstrapButton variant={variant***REMOVED*** onClick={onClick***REMOVED***>
-      {children***REMOVED***
+    <BootstrapButton variant={variant} onClick={onClick}>
+      {children}
     </BootstrapButton>
   );
-***REMOVED***;
+};
 
 export default Button;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button ***REMOVED*** from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const ContactContainer: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ const ContactContainer: React.FC = () => {
             </Form.Group>
             <Form.Group controlId="message">
               <Form.Label>Message:</Form.Label>
-              <Form.Control as="textarea" rows={3***REMOVED*** required />
+              <Form.Control as="textarea" rows={3} required />
             </Form.Group>
             <Button variant="dark" type="submit">
               Submit
@@ -29,6 +29,6 @@ const ContactContainer: React.FC = () => {
       </Row>
     </Container>
   );
-***REMOVED***
+}
 
 export default ContactContainer;

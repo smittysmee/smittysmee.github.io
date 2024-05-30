@@ -1,6 +1,6 @@
 import React from 'react';
-import { Navbar, Nav ***REMOVED*** from 'react-bootstrap';
-import { LinkContainer ***REMOVED*** from 'react-router-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../assets/images/logo.png';
 
 const Header: React.FC = () => {
@@ -8,12 +8,12 @@ const Header: React.FC = () => {
     <Navbar bg="dark" variant="dark" expand="lg">
       <Navbar.Brand href="/">
         <img
-          src={logo***REMOVED***
+          src={logo}
           width="30"
           height="30"
           className="d-inline-block align-top"
           alt="ButterFlat.io logo"
-        />{' '***REMOVED***
+        />{' '}
         ButterFlat.io
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,6 +32,6 @@ const Header: React.FC = () => {
       </Navbar.Collapse>
     </Navbar>
   );
-***REMOVED***
+}
 
 export default Header;

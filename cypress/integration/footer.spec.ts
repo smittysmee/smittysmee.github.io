@@ -3,9 +3,9 @@
 describe('Footer Component', () => {
   beforeEach(() => {
     cy.visit('/');
-  ***REMOVED***);
+  });
 
   it('should render the footer text', () => {
     cy.get('footer').contains('© 2024 ButterFlat.io. All rights reserved.').should('be.visible');
-  ***REMOVED***);
-***REMOVED***);
+  });
+});

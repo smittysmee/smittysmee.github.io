@@ -1,46 +1,46 @@
 import * as React from "react";
-// import { QueryClient, QueryClientProvider ***REMOVED*** from "@tanstack/react-query";
-// import { AuthProvider ***REMOVED*** from "./AuthContext";
-import { RouterProvider, createBrowserRouter ***REMOVED*** from "react-router-dom";
-// import { store ***REMOVED*** from "../store";
-// import { Provider ***REMOVED*** from "react-redux";
-import { PropsWithChildren ***REMOVED*** from "react";
+// import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+// import { AuthProvider } from "./AuthContext";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+// import { store } from "../store";
+// import { Provider } from "react-redux";
+import { PropsWithChildren } from "react";
 
 // const queryConfig = {
 //   queries: {
 //     useErrorBoundary: true,
 //     refetchOnWindowFocus: false,
-//     retry(failureCount: number, error: { status: number; ***REMOVED***) {
+//     retry(failureCount: number, error: { status: number; }) {
 //       if (error.status === 404) return false
 //       else if (failureCount < 2) return true
 //       else return false
-// ***REMOVED***,
-//   ***REMOVED***,
-// ***REMOVED***
+//     },
+//   },
+// }
 
 // function ReduxProvider(props: PropsWithChildren) {
-//   return <Provider store={store***REMOVED***>{props.children***REMOVED***</Provider>;
-// ***REMOVED***
+//   return <Provider store={store}>{props.children}</Provider>;
+// }
 
 function AppProviders(props: PropsWithChildren) {
   const router = createBrowserRouter([
     {
       path: "*",
       element: props.children,
-***REMOVED***,
+    },
   ]);
 
   return (
-    // <QueryClientProvider client={new QueryClient()***REMOVED***>
+    // <QueryClientProvider client={new QueryClient()}>
     //   <ReduxProvider>
     //     <AuthProvider>
-          <RouterProvider router={router***REMOVED*** />
+          <RouterProvider router={router} />
         // </AuthProvider>
       // </ReduxProvider>
     // </QueryClientProvider>
   );
-***REMOVED***
+}
 
 export { AppProviders,
     // ReduxProvider
-***REMOVED***;
+};

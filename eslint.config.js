@@ -14,16 +14,16 @@ module.exports = {
   //   sourceType: 'module',
   //   ecmaFeatures: {
   //     jsx: true,
-  //   ***REMOVED***,
-  // ***REMOVED***,
+  //   },
+  // },
   // settings: {
   //   react: {
   //     version: 'detect',
-  //   ***REMOVED***,
-  // ***REMOVED***,
+  //   },
+  // },
   // rules: {
   //   // Place your custom rules here
   //   'react/react-in-jsx-scope': 'off',
   //   '@typescript-eslint/explicit-module-boundary-types': 'off',
-  // ***REMOVED***,
-***REMOVED***;
+  // },
+};

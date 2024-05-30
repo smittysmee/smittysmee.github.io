@@ -1,36 +1,36 @@
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+const path = require('path');
+const {merge} = require('webpack-merge');
+const common = require('./webpack.common.js');
+const webpack = require('webpack')
 
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+module.exports = (env) => {
+    let base_api_url = "http://localhost:8080"
+    if(!env) env = {}
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    if(env["local"]){
+        base_api_url = "http://localhost:8080"
+    } else{
+        base_api_url = "http://localhost:8080"
+    }
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-    ***REMOVED***,
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-        ***REMOVED***)
-***REMOVED***
-***REMOVED***);
+    const merged = merge(common, {
+        mode: 'development',
+        devServer: {
+            port: 3000, // you can change the port
+            allowedHosts: "all",
+            historyApiFallback: true
+        },
+        devtool: "source-map",  // Critical for debugging!
+        plugins: [
+            new webpack.EnvironmentPlugin({
+                NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+                DEBUG: true,
+                MOCKED_API: env["mock-api"] || false,
+                BASE_API_URL: base_api_url
+            })
+        ]
+    });
 
-***REMOVED***
-***REMOVED***
+    return merged;
+}

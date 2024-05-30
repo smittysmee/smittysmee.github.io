@@ -7,10 +7,10 @@
       "@babel/preset-react",
       {
         "runtime": "automatic"
-  ***REMOVED***
+      }
     ]
   ],
   "plugins": [
     "@emotion"
   ]
-***REMOVED***
+}

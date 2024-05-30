@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col ***REMOVED*** from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const AboutContainer: React.FC = () => {
   return (
@@ -18,6 +18,6 @@ const AboutContainer: React.FC = () => {
       </Row>
     </Container>
   );
-***REMOVED***
+}
 
 export default AboutContainer;

@@ -11,6 +11,6 @@ const App = () => {
             <Footer/>
         </div>
     );
-***REMOVED***
+}
 
 export default App;
