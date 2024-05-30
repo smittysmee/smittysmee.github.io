@@ -7,7 +7,7 @@ const HomeContainer: React.FC = () => {
       <Row>
         <Col>
           <h2>About ButterFlat.io</h2>
-          <p>Your go-to platform for flat, simple, and elegant design templates.</p>
+          <p>Your go-to platform for flat, simple, and elegant design templates. This is testing out the clean architecture</p>
         </Col>
       </Row>
       <Row>
