@@ -23,4 +23,7 @@ test('submits the form', () => {
   fireEvent.click(submitButton);
 
   // Add assertions as needed, such as checking if a form submission callback was called
+  expect(nameInput.value).toBe('John Doe');
+  expect(emailInput.value).toBe('john.doe@example.com');
+  expect(messageInput.value).toBe('Hello, this is a test message.');
 });

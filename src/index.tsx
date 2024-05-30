@@ -7,13 +7,26 @@ import {AppProviders} from "./context";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as Element);
 
-if (process.env.MOCKED_API === "true") {
-  // const { worker } = require("./mocks/browser"); // eslint-disable-line @typescript-eslint/no-var-requires
-  // worker.start();
+
+
+async function enableMocking() {
+    if (process.env.MOCKED_API !== "true") {
+        return
+    }
+
+    const {worker} = await import('./mocks/browser')
+
+    // `worker.start()` returns a Promise that resolves
+    // once the Service Worker is up and ready to intercept requests.
+    return worker.start()
 }
 
-root.render(
-  <AppProviders>
-    <App />
-  </AppProviders>
-);
+
+enableMocking().then(() => {
+    root.render(
+        <AppProviders>
+            <App/>
+        </AppProviders>
+    );
+})
+
