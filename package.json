@@ -72,6 +72,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "yarn eslint src",
+    "secrets": "detect-secrets scan",
     "prepare": "husky"
   },
   "eslintConfig": {

@@ -31,5 +31,7 @@ jobs:
       - name: Lint
         run: yarn lint
 
-#      - name: Secrets
-#        run: yarn secrets
+      - name: Secrets
+        run: yarn secrets
+
+      - uses: ArtiomTr/jest-coverage-report-action@v2

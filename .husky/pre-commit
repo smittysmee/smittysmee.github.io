@@ -1,7 +1,2 @@
 yarn lint
-pip install detect-secrets
-FILE_COUNT=$(detect-secrets scan | tee .secrets.baseline.json | jq '.results|length')
-if test $FILE_COUNT -gt 0 ; then
-    echo "Secrets detected. Please review and remove them."
-    exit 1
-fi
+yarn secrets
